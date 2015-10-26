@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		3D04FE291BDDA96400E8B44A /* Facebook Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facebook Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D04FE2C1BDDA96400E8B44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D04FE2C1BDDA96400E8B44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Facebook Login/AppDelegate.swift"; sourceTree = "<group>"; };
 		3D04FE2E1BDDA96400E8B44A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D04FE311BDDA96400E8B44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D04FE331BDDA96400E8B44A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +83,7 @@
 				3D04FE401BDDA96400E8B44A /* Facebook LoginTests */,
 				3D04FE4B1BDDA96400E8B44A /* Facebook LoginUITests */,
 				3D04FE2A1BDDA96400E8B44A /* Products */,
+				3D04FE2C1BDDA96400E8B44A /* AppDelegate.swift */,
 				3D04FE351BDDA96400E8B44A /* LaunchScreen.storyboard */,
 				3D04FE5A1BDDAB1800E8B44A /* FacebookSDKs-iOS-20151007 */,
 			);
@@ -101,9 +102,8 @@
 		3D04FE2B1BDDA96400E8B44A /* Facebook Login */ = {
 			isa = PBXGroup;
 			children = (
-				3D04FE2C1BDDA96400E8B44A /* AppDelegate.swift */,
-				3D04FE2E1BDDA96400E8B44A /* ViewController.swift */,
 				3D04FE301BDDA96400E8B44A /* Main.storyboard */,
+				3D04FE2E1BDDA96400E8B44A /* ViewController.swift */,
 				3D04FE331BDDA96400E8B44A /* Assets.xcassets */,
 				3D04FE381BDDA96400E8B44A /* Info.plist */,
 			);
