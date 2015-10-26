@@ -15,6 +15,9 @@
 		3D04FE421BDDA96400E8B44A /* Facebook_LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D04FE411BDDA96400E8B44A /* Facebook_LoginTests.swift */; };
 		3D04FE4D1BDDA96400E8B44A /* Facebook_LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D04FE4C1BDDA96400E8B44A /* Facebook_LoginUITests.swift */; };
 		3D04FE5B1BDDAB1800E8B44A /* FacebookSDKs-iOS-20151007 in Resources */ = {isa = PBXBuildFile; fileRef = 3D04FE5A1BDDAB1800E8B44A /* FacebookSDKs-iOS-20151007 */; };
+		3D04FE971BDEBA6400E8B44A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D04FE961BDEBA6400E8B44A /* FBSDKCoreKit.framework */; };
+		3D04FE991BDEBA7200E8B44A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D04FE981BDEBA7200E8B44A /* FBSDKLoginKit.framework */; };
+		3D04FE9B1BDEBA8100E8B44A /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D04FE9A1BDEBA8100E8B44A /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		3D04FE4C1BDDA96400E8B44A /* Facebook_LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facebook_LoginUITests.swift; sourceTree = "<group>"; };
 		3D04FE4E1BDDA96400E8B44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D04FE5A1BDDAB1800E8B44A /* FacebookSDKs-iOS-20151007 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "FacebookSDKs-iOS-20151007"; path = "Facebook Login/FacebookSDKs-iOS-20151007"; sourceTree = "<group>"; };
+		3D04FE961BDEBA6400E8B44A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "Facebook Login/FacebookSDKs-iOS-20151007/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		3D04FE981BDEBA7200E8B44A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "Facebook Login/FacebookSDKs-iOS-20151007/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		3D04FE9A1BDEBA8100E8B44A /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "Facebook Login/FacebookSDKs-iOS-20151007/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D04FE991BDEBA7200E8B44A /* FBSDKLoginKit.framework in Frameworks */,
+				3D04FE971BDEBA6400E8B44A /* FBSDKCoreKit.framework in Frameworks */,
+				3D04FE9B1BDEBA8100E8B44A /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +92,9 @@
 				3D04FE401BDDA96400E8B44A /* Facebook LoginTests */,
 				3D04FE4B1BDDA96400E8B44A /* Facebook LoginUITests */,
 				3D04FE2A1BDDA96400E8B44A /* Products */,
+				3D04FE9A1BDEBA8100E8B44A /* FBSDKShareKit.framework */,
+				3D04FE981BDEBA7200E8B44A /* FBSDKLoginKit.framework */,
+				3D04FE961BDEBA6400E8B44A /* FBSDKCoreKit.framework */,
 				3D04FE2C1BDDA96400E8B44A /* AppDelegate.swift */,
 				3D04FE351BDDA96400E8B44A /* LaunchScreen.storyboard */,
 				3D04FE5A1BDDAB1800E8B44A /* FacebookSDKs-iOS-20151007 */,
@@ -401,6 +413,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Facebook",
+					"Login/FacebookSDKs-iOS-20151007",
+				);
 				INFOPLIST_FILE = "Facebook Login/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cynthia.Facebook-Login";
@@ -412,6 +429,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Facebook",
+					"Login/FacebookSDKs-iOS-20151007",
+				);
 				INFOPLIST_FILE = "Facebook Login/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cynthia.Facebook-Login";
@@ -486,6 +508,7 @@
 				3D04FE531BDDA96400E8B44A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D04FE541BDDA96400E8B44A /* Build configuration list for PBXNativeTarget "Facebook LoginTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +517,7 @@
 				3D04FE561BDDA96400E8B44A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D04FE571BDDA96400E8B44A /* Build configuration list for PBXNativeTarget "Facebook LoginUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +526,7 @@
 				3D04FE591BDDA96400E8B44A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
